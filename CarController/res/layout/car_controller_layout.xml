@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Controller_Layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+	<TextView
+            android:id="@+id/tvState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="@string/blank" />
+
+	<ImageView
+	    android:id="@+id/PlusButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/MinusButton"
+	    android:layout_alignLeft="@+id/MinusButton"
+	    android:src="@drawable/a_plus" />
+
+	<ImageView
+	    android:id="@+id/DownButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/tvState"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginBottom="30dp"
+	    android:src="@drawable/downbutton100" />
+
+	<ImageView
+	    android:id="@+id/UpButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/DownButton"
+	    android:layout_alignParentLeft="true"
+	    android:src="@drawable/upbutton100" />
+
+	<ImageView
+	    android:id="@+id/RightButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignTop="@+id/DownButton"
+	    android:src="@drawable/rightbutton100" />
+
+	<ImageView
+	    android:id="@+id/LightButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/DownButton"
+	    android:layout_marginLeft="68dp"
+	    android:layout_toRightOf="@+id/DownButton"
+	    android:src="@drawable/light_down" />
+
+	<ImageView
+	    android:id="@+id/HornButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/LightButton"
+	    android:layout_alignLeft="@+id/LightButton"
+	    android:src="@drawable/a_sound_down" />
+
+	<ImageView
+	    android:id="@+id/MinusButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/RightButton"
+	    android:layout_marginRight="52dp"
+	    android:layout_toLeftOf="@+id/RightButton"
+	    android:src="@drawable/a_minus" />
+
+	<ImageView
+	    android:id="@+id/LeftButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/RightButton"
+	    android:layout_alignParentRight="true"
+	    android:src="@drawable/leftbutton100" />
+
+</RelativeLayout>

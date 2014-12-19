@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp" >
+
+        <ScrollView
+            android:id="@+id/ScrollView01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:overScrollMode="always"
+            android:scrollbars="horizontal|vertical" >
+
+            <TextView
+                android:id="@+id/tLog"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/long_text" />
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tvState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="@string/blank" />
+
+        <TextView
+            android:id="@+id/tvPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/blank" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/button303"
+            android:layout_centerHorizontal="true"
+            android:text="@string/action_2" />
+
+        <Button
+            android:id="@+id/button303"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tvPosition"
+            android:layout_toRightOf="@+id/button1"
+            android:text="$$$" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/button303"
+            android:layout_toLeftOf="@+id/button2"
+            android:text="@string/action_1" />
+
+        <ToggleButton
+            android:id="@+id/tbScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tSendPosition"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_alignRight="@+id/button2"
+            android:layout_below="@+id/button2"
+            android:text="@string/blank"
+            android:textOff="@string/screen_lock"
+            android:textOn="@string/screen_unlock" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/tbScreen"
+            android:layout_toRightOf="@+id/button2"
+            android:text="@string/action_3" />
+
+        <ToggleButton
+            android:id="@+id/tbSomething"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tSendPosition"
+            android:layout_alignLeft="@+id/button3"
+            android:layout_alignRight="@+id/button3"
+            android:layout_below="@+id/button3"
+            android:text="@string/blank" />
+
+        <ToggleButton
+            android:id="@+id/tSendPosition"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/button2"
+            android:layout_toLeftOf="@+id/button2"
+            android:text="@string/blank"
+            android:textOff="@string/accelero_on"
+            android:textOn="@string/accelero_off" />
+
+        <ImageButton
+            android:id="@+id/buttonTouched"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button303"
+            android:layout_alignLeft="@+id/button1"
+            android:layout_alignRight="@+id/button1"
+            android:layout_alignTop="@+id/button303"
+            android:text="Chuj" />
+
+    </RelativeLayout>
+
+</LinearLayout>
