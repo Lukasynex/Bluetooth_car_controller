@@ -86,6 +86,7 @@ public class Main extends Activity implements SensorEventListener {
 
 	private int screenWidth = 0, screenHeight = 0;
 
+	UniversalLayout lay;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -95,28 +96,9 @@ public class Main extends Activity implements SensorEventListener {
 		getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
 		screenWidth = displayMetrics.widthPixels;
 		screenHeight = displayMetrics.heightPixels;
-
-//		ImageView up_btn = (ImageView)findViewById(R.id.UpButton);
-//		ImageView down_btn = (ImageView)findViewById(R.id.DownButton);
-//		ImageView left_btn = (ImageView)findViewById(R.id.LeftButton);
-//		ImageView right_btn = (ImageView)findViewById(R.id.RightButton);
-//		
-//		ImageView horn_btn = (ImageView)findViewById(R.id.HornButton);
-//		ImageView plus_btn = (ImageView)findViewById(R.id.PlusButton);
-//		ImageView minus_btn = (ImageView)findViewById(R.id.MinusButton);
-//		ImageView light_btn = (ImageView)findViewById(R.id.LightButton);
-//	
-//		int width = screenWidth/4;
-//		int height = screenHeight/2;
-//		LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(width, height);
-//		up_btn.setLayoutParams(layoutParams);
-//		down_btn.setLayoutParams(layoutParams);
-//		left_btn.setLayoutParams(layoutParams);
-//		right_btn.setLayoutParams(layoutParams);
-//		horn_btn.setLayoutParams(layoutParams);
-//		minus_btn.setLayoutParams(layoutParams);
-//		plus_btn.setLayoutParams(layoutParams);
-//		light_btn.setLayoutParams(layoutParams);
+		
+//		lay = new UniversalLayout(this, screenWidth,screenHeight);
+//		setContentView(lay);
 		
 		mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 		if (mBluetoothAdapter == null) {
