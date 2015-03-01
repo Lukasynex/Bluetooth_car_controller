@@ -1,7 +1,7 @@
 <resources>
 
     <string name="app_name">CarController v2.1</string>
-    <string name="title">Odzyskana Apka</string>
+    <string name="title">CarController_v2.2</string>
     <string name="title_activity_main">Car Controller</string>
     <string name="connect">Połącz</string>
     <string name="disconnect">Rozłącz</string>

@@ -1,0 +1,32 @@
+package com.binacja.luk.main;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.View;
+import android.widget.ImageView;
+
+
+public class TouchView extends View {
+
+	public TouchView(Context context) {
+		super(context);
+		// TODO Auto-generated constructor stub
+	}
+	public TouchView(Context context, AttributeSet set){
+		super(context,set);
+	
+		ImageView up_btn = (ImageView)findViewById(R.id.UpButton);
+		ImageView down_btn = (ImageView)findViewById(R.id.DownButton);
+		ImageView left_btn = (ImageView)findViewById(R.id.LeftButton);
+		ImageView right_btn = (ImageView)findViewById(R.id.RightButton);
+		
+		ImageView horn_btn = (ImageView)findViewById(R.id.HornButton);
+		ImageView plus_btn = (ImageView)findViewById(R.id.PlusButton);
+		ImageView minus_btn = (ImageView)findViewById(R.id.MinusButton);
+		ImageView light_btn = (ImageView)findViewById(R.id.LightButton);
+		
+	}
+	
+	
+
+}
